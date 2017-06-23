@@ -2,9 +2,9 @@
 
 https://www.freebsd.org/cgi/man.cgi?query=cbsd&apropos=0&sektion=0&manpath=FreeBSD+11.0-RELEASE+and+Ports&arch=default&format=html[`cbsd`]
 est un outil permettant de gérer des jails et des machines virtuelles
-bhyves. Il supporte un nombre important de fonctionnalité, tel que la
+bhyve. Il supporte un nombre important de fonctionnalités, telles que la
 gestion de nœuds, les backups, snapshots, la configuration via webui
-ou curse...
+ou curses...
 
 .Installation
 [sh]

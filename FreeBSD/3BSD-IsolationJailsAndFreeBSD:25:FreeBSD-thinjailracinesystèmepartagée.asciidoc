@@ -1,7 +1,7 @@
 == FreeBSD - thin jail (racine système partagée)
 
 Cette méthode est la plus simple à créer, elle utilisable facilement
-sur un poste client et permet d'avoir un système de jails synchroniser
+sur un poste client et permet d'avoir un système de jails synchronisé
 avec le système hôte.
 
 [sh]

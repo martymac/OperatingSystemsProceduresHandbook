@@ -16,7 +16,7 @@ jail_enable="YES"
 
 Il est éventuellement possible de configurer directement les jails via
 ces fichiers de configuration, mais cette méthode n'est plus
-recommandé depuis FreeBSD9 et FreeBSD10. Utiliser cette fonctionnalité
+recommandée depuis FreeBSD9 et FreeBSD10. Utiliser cette fonctionnalité
 dans les dernières versions de FreeBSD génèrera une configuration dans
 `/var/run/jail.myjailname.conf`:
 

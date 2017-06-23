@@ -4,10 +4,10 @@ Différentes versions de jails existent. La méthode la plus facile à
 déployer est la "huge-jail", elle contient directement une copie
 fonctionnelle du système. Malheureusement cette méthode à des
 inconvénients tel que le management du système et l'espace utilisé est
-proportionnel au nombre de jails déployé.
+proportionnel au nombre de jails déployés.
 
-Les thin-jails permettent de créer un système en lecture seul partagé
-par plusieurs jails. Les thins-jails peuvent se répartir elle-même en
+Les thin-jails permettent de créer un système en lecture seule partagé
+par plusieurs jails. Les thins-jails peuvent se répartir elles-même en
 plusieurs méthodes de déploiement:
 
  * partage de la racine du système hôte avec
@@ -20,7 +20,7 @@ plusieurs méthodes de déploiement:
    https://www.freebsd.org/cgi/man.cgi?query=mount_unionfs[unionfs]
 
 Par ailleurs, les thin-jails utilisant nullfs partagent tous une
-arborescence du système de fichier similaire:
+arborescence du système de fichiers similaire:
 
 .Création du répertoire pour le template
 [sh]
@@ -69,7 +69,7 @@ chmod 700 root
 
 Si votre jail nécessite une sécurité importante, il est possible
 d'utiliser différents mécanismes pour éviter qu'un utilisateur mal
-intentionné dans la jail modifie la template précédemment crée. Nous
+intentionné dans la jail modifie le template précédemment créé. Nous
 pouvons utiliser les flags étendus au niveau du système de fichiers
 (via `chflags`)
 
@@ -87,10 +87,10 @@ chflags sunlnk usr/include usr/bin usr/libdata usr/lib32 \
 Attention, si vous voulez pouvoir supprimer simplement la jail après
 le déploiement, vous devrez supprimer les flags activés via la
 commande `chflags -R 0 /path/to/your/jail`. Effectivement, les flags
-configurés empechent la suppression ou la modification des fichiers
+configurés empêchent la suppression ou la modification des fichiers
 possédant ces flags actifs.
 
-.Création de la template sous forme d'un tarball
+.Création du template sous forme d'un tarball
 [sh]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 tar czvfpP ../template-thinjail.tgz thinjailtemplate

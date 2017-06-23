@@ -3,7 +3,7 @@
 Une jail étant en quelque sorte un chroot amélioré, cette dernière a
 besoin d'un environnement pour être lancé. Cet environnement contient
 un ou plusieurs programmes voir un système complet. Pour faire simple,
-une jail est une installation de FreeBSD dans un répertoire choisis.
+une jail est une installation de FreeBSD dans un répertoire choisi.
 
 Tout comme pour l'installation, ou la mise à jour, il est possible
 d'utiliser 2 méthodes.

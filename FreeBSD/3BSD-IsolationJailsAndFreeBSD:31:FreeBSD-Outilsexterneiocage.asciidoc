@@ -16,9 +16,9 @@ make && make install
 
 `iocage` utilise des fonctionnalités récentes qui ne sont pas par
 défaut dans le kernel GENERIC. `VIMAGE`, `RACCT` et `RCTL` devront
-alors être activé pour pouvoir utiliser toutes les options
+alors être activées pour pouvoir utiliser toutes les options
 d'`iocage`. `ZFS` est aussi recommandé, les fonctions de snapshots,
-backup et réplication s'appuyant sur ce système de fichier.
+backup et réplication s'appuyant sur ce système de fichiers.
 
 .Utilisation
 [sh]

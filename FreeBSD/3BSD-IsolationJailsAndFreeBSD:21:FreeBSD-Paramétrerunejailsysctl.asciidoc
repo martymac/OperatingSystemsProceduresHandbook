@@ -1,6 +1,6 @@
 == FreeBSD - Paramétrer une jail (sysctl)
 
-Certains paramètre des jails ne sont configurables que depuis le
+Certains paramètres des jails ne sont configurables que depuis le
 kernel. https://www.freebsd.org/cgi/man.cgi?query=sysctl[`sysctl`]
 permet donc de jouer ou d'afficher certaines options concernant les
 jails.

@@ -1,4 +1,4 @@
-== FreeBSD - thin jail (racine système dédié)
+== FreeBSD - thin jail (racine système dédiée)
 
 Cette méthode permet de créer une racine dédiée contenant un
 environnement FreeBSD complet (world). Au lieu de monter directement
@@ -12,7 +12,7 @@ mkdir /path/to/sharedroot
 cd /usr/src
 make installworld DESTDIR=/path/to/sharedroot
 
-# initialisation de la template
+# initialisation du template
 cd /path/to/directoryjail
 tar zxvf thinjailtemplate.tgz
 mv thinjailtemplate mysharedjail

@@ -1,21 +1,21 @@
-== FreeBSD - Test de système de fichier avec `mdconfig`
+== FreeBSD - Test de système de fichiers avec `mdconfig`
 
-Le test de système de fichier ou de solution bas niveau pour le
-stockage de données est problématique. Ces technologies peuvent par
+Le test de système de fichiers ou de solution bas niveau pour le
+stockage de données est problématique. Ces technologies peuvent, par
 exemple, demander beaucoup de ressources (quantité de disque dur
 insuffisante ou mémoire importante). Ces problématiques bloquent
 souvent la mise en place de simples tests.
 
 Dans le cadre des ateliers, nous utiliserons des interfaces de
 stockage standardisées basées sur des noeuds virtuels (disques en
-mémoire). Cette méthode est peu couteuse et permet de voir le
+mémoire). Cette méthode est peu coûteuse et permet de voir le
 fonctionnement des outils sans prendre de risque ou de se confronter à
 des problématiques liées au hardware.
 
 [WARNING]
 ======================================================================
 La création de disque mémoire n'est pas recommandée pour une
-utilisation en production. Ces méthodes sont souvent utiliéses pour
+utilisation en production. Ces méthodes sont souvent utilisées pour
 faire des tests, du dépannage ou pour accéder à des
 fonctionnalitées particulières du système (montage d'une image iso par
 exemple).
@@ -24,7 +24,7 @@ exemple).
 FreeBSD fournit la commande
 https://www.freebsd.org/cgi/man.cgi?query=mdconfig[`mdconfig`] (Memory
 Disk Configuration) qui permet de créer différents devices basés sur
-l'allocation mémoire. Ces disques dur sont représentés par un fichier
+l'allocation mémoire. Ces disques durs sont représentés par un fichier
 spécial `/dev/mdX`, X étant un entier (0, 1, 2...).
 
 .Création d'un disque mémoire de 1024MB sur la heap (RAM)
